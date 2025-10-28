@@ -11,7 +11,7 @@
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Test Manager | | Planning, scheduling, coordination, metric tracking |
+| Test Manager | Keamogetswe M| Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | | Risk identification, prioritization, test design linkage |
 | Test Executor | | Execution, evidence capture, defect logging |
 
@@ -31,33 +31,45 @@
 
 | Feature | Description | Risk Category |
 |---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | |
-| Leaderboard | Stores top 3 scores in localStorage | |
-| Bonus Round | Every 3 puzzles → doubles score | |
+| Reset Game | Clears score and progress instantly | High |
+| Leaderboard | Stores top 3 scores in localStorage | High |
+| Bonus Round | Every 3 puzzles → doubles score | High |
 
 ## Test Plan
 
 ### Objectives
 
-- 
+- The objective of this test plan is to validate the following:
+    - Clicking 'reset' sets score = 0 and clears progress
+    - Leaderboard accuracy and localStorage behaviour
+    - Bonus round triggers correctly and applies score multipliers
 
 ### Scope
 
 **In Scope:**
-- 
+- Reset Game score and progress
+- Stores scores in localStorage
+- Doubling of scores in bonus round
+- Third round triggers bonus round
 
 **Out of Scope:**
 - 
 
 ### Tools & Resources
 
-- 
+| Tool / Resource            | Purpose       |
+| --------------------------- | ------------------------------ | 
+| Google Chrome                | test environment |
+| Github Issues        | tracking and logging issues                 |
+| WhatsApp Messenger        | team communication     |
+
+
 
 ### Schedule
 
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| | | | |
+| Test Planning | 4 hours| 2 hours | completed|
 
 ## Risk Analysis
 
