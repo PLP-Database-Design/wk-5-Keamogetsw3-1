@@ -196,13 +196,13 @@ Each issue includes:
 ---
 ---
 
-## 📊 STEP 6 — Test Monitoring & Metrics (by Test Manager)
+## STEP 6 — Test Monitoring & Metrics (by Test Manager)
 
 This section tracks testing progress using key QA metrics such as Pass Rate, Defect Density, Risk Coverage, and Regression Success Rate.
 
 ---
 
-### 🧮 Test Summary Table
+### Test Summary Table
 
 | Metric | Formula | Example Calculation | Result |
 |--------|----------|----------------------|---------|
@@ -246,7 +246,7 @@ This section tracks testing progress using key QA metrics such as Pass Rate, Def
 
 ---
 
-### 🧠 Reflection
+###  Reflection
 
 ####  How risk analysis shaped testing focus:
 The team concentrated test efforts on high-risk areas — particularly the leaderboard persistence and bonus logic — which were most likely to impact user experience and scoring accuracy.
