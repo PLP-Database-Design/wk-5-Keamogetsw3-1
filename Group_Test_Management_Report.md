@@ -14,7 +14,7 @@
 |------|------|------------------|
 | Test Manager | Keamogetswe M | Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | Sally Trizer | Risk identification, prioritization, test design linkage |
-| Test Executor | jstine martin | Execution, evidence capture, defect logging |
+| Test Executor | Martin Justine | Execution, evidence capture, defect logging |
 
 ---
 
@@ -46,17 +46,17 @@
 
 ### Objectives
 
-- Validate reset, leaderboard, and bonus logic.  
-- Ensure leaderboard accuracy and persistence.  
-- Confirm that bonus round triggers correctly after 3 solved puzzles.  
+- The objective of this test plan is to validate the following:
+  - Clicking 'reset' sets score = 0 and clears progress
+  - Leaderboard accuracy and localStorage behaviour
+  - Bonus round triggers correctly and applies score multipliers
 
 ### Scope
 
 **In Scope:**
 - Reset Game score and progress  
 - Leaderboard functionality and localStorage  
-- Bonus round score calculation  
-- UI responsiveness on desktop  
+- Bonus round score calculation   
 
 **Out of Scope:**
 - Server-side or backend testing (local-only)  
@@ -69,9 +69,8 @@
 | Tool / Resource | Purpose |
 |-----------------|----------|
 | Google Chrome | Test execution environment |
-| GitHub Issues | Defect tracking |
+| GitHub Issues | Defect tracking and logginf |
 | WhatsApp Messenger | Team communication |
-| Excel / Sheets | Risk scoring and metrics tracking |
 
 ---
 
@@ -115,7 +114,7 @@
 | TC-02 | Reset Game | Ensure leaderboard remains after reset | Leaderboard unchanged | Works correctly | Pass | R1 |
 | TC-03 | Leaderboard | Verify sorting logic | Sorted descending | Works | Pass | R1 |
 | TC-04 | Leaderboard | Data persists after refresh | Data retained | Works | Pass | R1 |
-| TC-05 | Bonus Round | Double score every 3 puzzles | Score doubled | Bug found | Fail | R3 |
+| TC-05 | Bonus Round | Double score every 3 puzzles | Score doubled | works | Pass | R3 |
 | TC-06 | Hint System | Verify penalty applied | -2 +5 total +3 | Works | Pass | R5 |
 | TC-07 | Guess Validation | Reject invalid guesses | “Incorrect” message displayed | Works | Pass | R5 |
 | TC-08 | UI Layout | Buttons visible and clickable | All clickable and visible | Works | Pass | R4 |
@@ -126,8 +125,8 @@
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|--------------|----------|----------|--------|-------------|
-| D1 | Bonus round didn’t double score | High | R3 | Open | [GitHub Issue #5](https://github.com/) |
-| D2 | Hint button penalty delay | Medium | R5 | Closed | [GitHub Issue #7](https://github.com/) |
+| D01 | Refresh Button does not reset the leadership| Medium | R3 | Open | [GitHub Issue #5](https://github.com/PLP-Database-Design/wk-5-Keamogetsw3-1/issues/4) |
+| D02 | Hint button penalty delay | Medium | R5 | Closed | [GitHub Issue #7](https://github.com/) |
 
 ---
 
@@ -173,9 +172,18 @@
 
 - Screenshot 1: Leaderboard sorting result  
 - Screenshot 2: Reset button functionality  
-- Screenshot 3: Bonus round calculation issue  
+- Screenshot 3: Bonus  calculation issue  
 
-Example (if uploaded in GitHub folder `/evidence`):
-```markdown
-![Leaderboard Screenshot](./evidence/leaderboard.png)
+## Sign Off
+| Name              | Role            | Initials | Date |
+|-------------------|-----------------|-----------|------|
+|  Keamogetswe    | Test Manager |    K       |    28/1012025  |
+|   Justin   | Risk Analyst    |       J    |    28/10/2025  |
+|    Sally  | Test Executor              |      S     |   28/10/2025   |
+
+		
+## Overall Summary
+### Statement:
+
+Test Status: ☐ Completed / ☐ In Progress / ☐ Deferred
 
