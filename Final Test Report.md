@@ -53,7 +53,7 @@
 - Third round triggers bonus round
 
 **Out of Scope:**
-- 
+- checking database storage
 
 ### Tools & Resources
 
