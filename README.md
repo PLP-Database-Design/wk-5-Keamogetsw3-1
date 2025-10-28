@@ -67,21 +67,98 @@ Include:
 - Define **Mitigation / Contingency** actions.  
 - Add a **risk-coverage pie chart**.
 
-### 3️⃣ Test Design & Execution
-- Minimum **8 test cases** (≥ 5 risk-based).  
-- Include **2 negative** and **1 usability** test.  
-- Use this format:
+---
 
-```
-ID: TC-03
-Feature: Leaderboard
-Objective: Verify top-3 sorting logic
-Steps:
+### ✅ Test Cases
 
-Achieve scores 5, 12, 8 → check order
-Expected: Scores sorted descending
-Risk Priority: High
-```
+**ID: TC-01**  
+**Feature:** Reset Game  
+**Objective:** Verify that the “Reset” button clears score and progress.  
+**Steps:**  
+1. Play and solve at least 1 puzzle.  
+2. Click the “Reset” button.  
+**Expected:** Score resets to 0, solved puzzles reset to 0, leaderboard remains unchanged.  
+**Risk Priority:** High  
+
+---
+
+**ID: TC-02**  
+**Feature:** Reset Game  
+**Objective:** Ensure leaderboard data remains after reset.  
+**Steps:**  
+1. Achieve a score high enough to appear on the leaderboard.  
+2. Click “Reset.”  
+**Expected:** Leaderboard still displays top 3 scores.  
+**Risk Priority:** Medium  
+
+---
+
+**ID: TC-03**  
+**Feature:** Leaderboard  
+**Objective:** Verify top-3 sorting logic.  
+**Steps:**  
+1. Achieve scores 5, 12, 8.  
+2. Open leaderboard.  
+**Expected:** Scores displayed in descending order (12, 8, 5).  
+**Risk Priority:** High  
+
+---
+
+**ID: TC-04**  
+**Feature:** Leaderboard  
+**Objective:** Verify leaderboard saves to localStorage.  
+**Steps:**  
+1. Achieve a top score.  
+2. Refresh the browser.  
+**Expected:** Leaderboard retains previous top 3 scores.  
+**Risk Priority:** High  
+
+---
+
+**ID: TC-05**  
+**Feature:** Bonus Round  
+**Objective:** Confirm that the score doubles every 3 solved puzzles.  
+**Steps:**  
+1. Solve 3 puzzles correctly.  
+2. Observe score calculation.  
+**Expected:** Score is multiplied by 2.  
+**Risk Priority:** High  
+
+---
+
+**ID: TC-06 (Negative Test)**  
+**Feature:** Hint System  
+**Objective:** Verify penalty when using a hint.  
+**Steps:**  
+1. Use “Hint.”  
+2. Solve the puzzle.  
+**Expected:** -2 points deducted and +5 points added (total +3).  
+**Risk Priority:** Medium  
+
+---
+
+**ID: TC-07 (Negative Test)**  
+**Feature:** Guess Validation  
+**Objective:** Ensure invalid guesses are rejected.  
+**Steps:**  
+1. Enter a random word not matching the scrambled word.  
+2. Click “Submit.”  
+**Expected:** Message like “Incorrect! Try again” appears; score does not increase.  
+**Risk Priority:** Medium  
+
+---
+
+**ID: TC-08 (Usability Test)**  
+**Feature:** UI Layout and Controls  
+**Objective:** Check that all buttons (Submit, Hint, New Puzzle, Reset) are visible and clickable.  
+**Steps:**  
+1. Open the game on Chrome (desktop).  
+2. Observe and interact with all buttons.  
+**Expected:** All buttons function as intended, with proper spacing and labels.  
+**Risk Priority:** Low  
+
+---
+
 
 
 ### 4️⃣ Defect Reporting
