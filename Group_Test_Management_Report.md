@@ -151,7 +151,7 @@
 |-------|-------------|---------------|----------|-------|
 | Planning | Test Plan | Completed | 0% | Keamogetswe M |
 | Risk Analysis | Risk Matrix | Completed | 0% | Sally Trizer |
-| Execution | Test Evidence | Completed | 0% | Faith N |
+| Execution | Test Evidence | Completed | 0% | Martin Justin |
 | Reporting | Final Report | Completed | 0% | All Members |
 
 **Progress Tracking Method:** GitHub Issues and WhatsApp  
@@ -170,9 +170,13 @@
 
 ## Attachments / Evidence
 
-- Screenshot 1: Leaderboard sorting result  
+- Screenshot 1: Leaderboard sorting result
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/af5c4467-2073-4ee7-9bbb-41454a12387f" />
+ 
 - Screenshot 2: Reset button functionality  
-- Screenshot 3: Bonus  calculation issue  
+- Screenshot 3: Bonus  calculation
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a96f8c72-2525-43f0-9b41-50b0f3e65930" />
+
 
 ## Sign Off
 | Name              | Role            | Initials | Date |
@@ -186,4 +190,5 @@
 ### Statement:
 
 Test Status: ☐ Completed / ☐ In Progress / ☐ Deferred
+
 
